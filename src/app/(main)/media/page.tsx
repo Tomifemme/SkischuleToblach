@@ -24,14 +24,7 @@ export default function MediaPage() {
     { src: 'https://placehold.co/600x400.png', alt: 'Sunrise over the Dolomites', hint: 'mountain sunrise' },
   ];
 
-  const socialLinks = [
-      { 
-        name: 'Facebook',
-        url: 'https://www.facebook.com/scuolascidobbiaco/?locale=it_IT',
-        icon: <Facebook className="h-8 w-8 text-primary" />,
-        ctaKey: 'media.facebook'
-      }
-  ]
+  const facebookUrl = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fscuolascidobbiaco%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId";
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -46,20 +39,21 @@ export default function MediaPage() {
 
       <section className="mb-16">
         <h2 className="font-headline text-3xl font-bold mb-8">{t('media.socialTitle')}</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {socialLinks.map(social => (
-                <Card key={social.name} className="shadow-lg">
-                    <CardContent className="p-6 flex flex-col items-center justify-center text-center">
-                        {social.icon}
-                        <h3 className="text-xl font-semibold mt-4 mb-2">{social.name}</h3>
-                        <Button asChild>
-                            <Link href={social.url} target="_blank" rel="noopener noreferrer">
-                                {t(social.ctaKey)}
-                            </Link>
-                        </Button>
-                    </CardContent>
-                </Card>
-            ))}
+        <div className="w-full max-w-lg mx-auto">
+            <Card className="shadow-xl">
+                <CardContent className="p-2">
+                    <iframe
+                        src={facebookUrl}
+                        width="100%"
+                        height="600"
+                        style={{ border: 'none', overflow: 'hidden' }}
+                        scrolling="no"
+                        frameBorder="0"
+                        allowFullScreen={true}
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    ></iframe>
+                </CardContent>
+            </Card>
         </div>
       </section>
 
