@@ -58,12 +58,12 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-right">
               <Image
-                src="https://storage.googleapis.com/studio-hosting-assets/projects/L1SMj9f8z9a4/files/42079021.jpg"
+                src="https://images.unsplash.com/photo-1703080138499-f1f0dbc7da42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxza2klMjBzY2hvb2x8ZW58MHx8fHwxNzU1MTAxNjExfDA&ixlib=rb-4.1.0&q=80&w=1080"
                 alt="Ski school group"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-xl"
-                data-ai-hint="ski lesson children"
+                data-ai-hint="ski school"
               />
             </div>
             <div className="animate-fade-in-left">
