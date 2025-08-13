@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useTranslation } from '@/hooks/use-translation';
-import { Facebook } from 'lucide-react';
+import { Facebook, Film } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function MediaPage() {
@@ -76,6 +76,14 @@ export default function MediaPage() {
                 </CardContent>
             </Card>
           ))}
+           <div className="text-center mt-4">
+            <Button asChild>
+                <Link href="https://www.scuolasci-dobbiaco.com/it/VIDEO" target="_blank" rel="noopener noreferrer">
+                    <Film className="mr-2 h-4 w-4" />
+                    View More Videos
+                </Link>
+            </Button>
+          </div>
         </div>
       </section>
 
