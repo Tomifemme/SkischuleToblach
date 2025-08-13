@@ -32,7 +32,7 @@ export default function HomePage() {
     <div className="flex flex-col">
       <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white">
         <Image
-          src="https://images.unsplash.com/photo-1707229219459-03dd69961ab0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxza2lpbmclMjBtb3VudGFpbnN8ZW58MHx8fHwxNzU1MTAxNjEwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+          src="/8525F8513280DB33A7F8AE436E470A8F.jpg"
           alt="Skiing in the Dolomites"
           layout="fill"
           objectFit="cover"
