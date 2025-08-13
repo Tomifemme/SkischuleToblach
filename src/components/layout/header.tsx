@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { MountainSnow, Menu, X } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X } from 'lucide-react';
 import { useTranslation } from '@/hooks/use-translation';
 import { LanguageSwitcher } from '@/components/language-switcher';
 import { Button } from '@/components/ui/button';
@@ -26,7 +27,7 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2 text-primary">
-            <MountainSnow className="h-8 w-8" />
+            <Image src="/images.jpeg" alt="Ski School Logo" width={40} height={40} className="rounded-full" />
             <span className="font-headline text-xl font-bold tracking-tight">
               Scuola Sci Dobbiaco
             </span>
