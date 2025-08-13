@@ -1,8 +1,11 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useTranslation } from '@/hooks/use-translation';
+import { Facebook } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function MediaPage() {
   const { t } = useTranslation();
@@ -21,6 +24,15 @@ export default function MediaPage() {
     { src: 'https://placehold.co/600x400.png', alt: 'Sunrise over the Dolomites', hint: 'mountain sunrise' },
   ];
 
+  const socialLinks = [
+      { 
+        name: 'Facebook',
+        url: 'https://www.facebook.com/scuolascidobbiaco/?locale=it_IT',
+        icon: <Facebook className="h-8 w-8 text-primary" />,
+        ctaKey: 'media.facebook'
+      }
+  ]
+
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="text-center mb-12">
@@ -31,6 +43,25 @@ export default function MediaPage() {
           {t('media.subtitle')}
         </p>
       </div>
+
+      <section className="mb-16">
+        <h2 className="font-headline text-3xl font-bold mb-8">{t('media.socialTitle')}</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {socialLinks.map(social => (
+                <Card key={social.name} className="shadow-lg">
+                    <CardContent className="p-6 flex flex-col items-center justify-center text-center">
+                        {social.icon}
+                        <h3 className="text-xl font-semibold mt-4 mb-2">{social.name}</h3>
+                        <Button asChild>
+                            <Link href={social.url} target="_blank" rel="noopener noreferrer">
+                                {t(social.ctaKey)}
+                            </Link>
+                        </Button>
+                    </CardContent>
+                </Card>
+            ))}
+        </div>
+      </section>
 
       <section className="mb-16">
         <h2 className="font-headline text-3xl font-bold mb-8">{t('media.videosTitle')}</h2>

@@ -116,7 +116,9 @@
     "title": "Media Gallery",
     "subtitle": "A glimpse into the action and fun at Scuola Sci Dobbiaco.",
     "videosTitle": "Our Videos",
-    "photosTitle": "Photo Moments"
+    "photosTitle": "Photo Moments",
+    "socialTitle": "Follow Us",
+    "facebook": "Follow us on Facebook"
   },
   "contact": {
     "title": "Where to Find Us",
@@ -125,7 +127,7 @@
     "address": "Via Dolomiti, 3, 39034 Dobbiaco BZ, Italy",
     "hoursTitle": "Opening Hours",
     "hours": "09:30 - 11:00 and 15:00 - 19:00",
-    "christmasHoursTitle": "Christmas Hours",
+    "christmasHoursTitle": "Christmas Opening Hours",
     "christmasHours": "09:30 - 12:00 and 15:00 - 19:00",
     "phoneTitle": "Phone",
     "phone": "+39 0474 972123",
