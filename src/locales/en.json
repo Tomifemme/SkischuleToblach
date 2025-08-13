@@ -85,6 +85,11 @@
       "saturday": "Saturday",
       "sunday": "Sunday",
       "time": "Time"
+    },
+    "rental": {
+      "title": "Need Equipment?",
+      "description": "We don't offer equipment rental directly, but we partner with a trusted local shop. Visit them for all your ski and snowboard needs.",
+      "button": "Visit Rental Shop"
     }
   },
   "booking": {

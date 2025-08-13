@@ -85,6 +85,11 @@
       "saturday": "Sabato",
       "sunday": "Domenica",
       "time": "Orario"
+    },
+    "rental": {
+      "title": "Hai bisogno di attrezzatura?",
+      "description": "Non offriamo il noleggio di attrezzatura direttamente, ma collaboriamo con un negozio locale di fiducia. Visitali per tutte le tue esigenze di sci e snowboard.",
+      "button": "Visita il negozio di noleggio"
     }
   },
   "booking": {

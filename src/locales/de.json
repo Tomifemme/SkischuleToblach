@@ -85,6 +85,11 @@
       "saturday": "Samstag",
       "sunday": "Sonntag",
       "time": "Uhrzeit"
+    },
+    "rental": {
+      "title": "Ausrüstung benötigt?",
+      "description": "Wir bieten keinen Ausrüstungsverleih direkt an, aber wir arbeiten mit einem vertrauenswürdigen lokalen Geschäft zusammen. Besuchen Sie es für all Ihre Ski- und Snowboardbedürfnisse.",
+      "button": "Verleihgeschäft besuchen"
     }
   },
   "booking": {

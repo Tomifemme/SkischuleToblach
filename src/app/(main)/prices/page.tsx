@@ -6,6 +6,9 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { useTranslation } from '@/hooks/use-translation';
 import { priceList2025_2026 } from '@/lib/data';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { ExternalLink } from 'lucide-react';
 
 type PriceData = { [key: string]: number | { [key: string]: any } };
 
@@ -43,6 +46,24 @@ export default function PricesPage() {
           {t('prices.subtitle')}
         </p>
       </div>
+
+      <Card className="mb-12 shadow-lg text-center">
+        <CardHeader>
+          <CardTitle className="font-headline text-2xl">{t('prices.rental.title')}</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p className="text-muted-foreground mb-4 max-w-xl mx-auto">
+            {t('prices.rental.description')}
+          </p>
+          <Button asChild>
+            <Link href="https://www.ski-rent.it/it/" target="_blank" rel="noopener noreferrer">
+              <ExternalLink className="mr-2 h-4 w-4" />
+              {t('prices.rental.button')}
+            </Link>
+          </Button>
+        </CardContent>
+      </Card>
+
 
       <Accordion type="multiple" className="w-full space-y-8">
         
