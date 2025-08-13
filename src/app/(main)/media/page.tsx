@@ -12,6 +12,7 @@ export default function MediaPage() {
 
   const videos = [
     { id: '6r9R1TDa0DI', title: '3 Cime/3 Zinnen Dolomites | Ski Pustertal Express' },
+    { id: 'rJ3bn_un6p4', title: 'Scuola Sci & Snowboard Dobiolands' },
   ];
 
   const photos = [
@@ -58,7 +59,7 @@ export default function MediaPage() {
 
       <section className="mb-16">
         <h2 className="font-headline text-3xl font-bold mb-8">{t('media.videosTitle')}</h2>
-        <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {videos.map((video) => (
             <Card key={video.id} className="overflow-hidden shadow-lg">
                 <div className="aspect-w-16 aspect-h-9">
@@ -76,14 +77,14 @@ export default function MediaPage() {
                 </CardContent>
             </Card>
           ))}
-           <div className="text-center mt-4">
+        </div>
+        <div className="text-center mt-8">
             <Button asChild>
                 <Link href="https://www.scuolasci-dobbiaco.com/it/VIDEO" target="_blank" rel="noopener noreferrer">
                     <Film className="mr-2 h-4 w-4" />
                     View More Videos
                 </Link>
             </Button>
-          </div>
         </div>
       </section>
 
