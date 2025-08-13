@@ -44,7 +44,7 @@ export default function PricesPage() {
         </p>
       </div>
 
-      <Accordion type="multiple" collapsible className="w-full space-y-8">
+      <Accordion type="multiple" className="w-full space-y-8">
         
         <AccordionItem value="group-courses">
           <AccordionTrigger className="font-headline text-3xl text-primary">{t('prices.groupCourses2Hours')}</AccordionTrigger>
