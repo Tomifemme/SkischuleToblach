@@ -25,7 +25,7 @@ export default function MediaPage() {
     { src: 'https://placehold.co/600x400.png', alt: 'Sunrise over the Dolomites', hint: 'mountain sunrise' },
   ];
 
-  const facebookUrl = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fscuolascidobbiaco%2F&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId";
+  const facebookUrl = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fscuolascidobbiaco&tabs=timeline&width=500&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId";
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -42,16 +42,17 @@ export default function MediaPage() {
         <h2 className="font-headline text-3xl font-bold mb-8">{t('media.socialTitle')}</h2>
         <div className="w-full max-w-lg mx-auto">
             <Card className="shadow-xl">
-                <CardContent className="p-2">
+                <CardContent className="p-2 aspect-w-1 aspect-h-1 md:aspect-w-4 md:aspect-h-5">
                     <iframe
                         src={facebookUrl}
-                        width="100%"
+                        width="500"
                         height="600"
                         style={{ border: 'none', overflow: 'hidden' }}
                         scrolling="no"
                         frameBorder="0"
-                        allowFullScreen={true}
                         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowFullScreen={true}
+                        className="w-full h-full"
                     ></iframe>
                 </CardContent>
             </Card>
