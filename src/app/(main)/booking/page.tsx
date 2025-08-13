@@ -127,9 +127,13 @@ export default function BookingPage() {
                                                 </SelectTrigger>
                                             </FormControl>
                                             <SelectContent>
-                                                <SelectItem value="private">{t('booking.form.private')}</SelectItem>
-                                                <SelectItem value="group-kids">{t('booking.form.groupKids')}</SelectItem>
-                                                <SelectItem value="group-adults">{t('booking.form.groupAdults')}</SelectItem>
+                                                <SelectItem value="group-course">{t('prices.groupCourses2Hours')}</SelectItem>
+                                                <SelectItem value="private-lesson">{t('prices.privateLessons')}</SelectItem>
+                                                <SelectItem value="super-course">{t('prices.superCourses')}</SelectItem>
+                                                <SelectItem value="weekend-course">{t('prices.weekendCourse')}</SelectItem>
+                                                <SelectItem value="full-day">{t('prices.fullDayWithLunch')}</SelectItem>
+                                                <SelectItem value="freeride">{t('prices.freeride')}</SelectItem>
+                                                <SelectItem value="junior-club">{t('prices.juniorClubHalfDayWithLunch')}</SelectItem>
                                             </SelectContent>
                                         </Select>
                                         <FormMessage />
