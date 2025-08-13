@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useTranslation } from '@/hooks/use-translation';
-import { MapPin, Clock, Phone, Mail, UserCheck } from 'lucide-react';
+import { MapPin, Clock, Phone, Mail, UserCheck, CalendarDays } from 'lucide-react';
 
 export default function ContactPage() {
   const { t } = useTranslation();
@@ -10,6 +10,7 @@ export default function ContactPage() {
   const officeContactDetails = [
     { icon: <MapPin className="h-6 w-6 text-primary" />, titleKey: 'contact.addressTitle', valueKey: 'contact.address' },
     { icon: <Clock className="h-6 w-6 text-primary" />, titleKey: 'contact.hoursTitle', valueKey: 'contact.hours' },
+    { icon: <CalendarDays className="h-6 w-6 text-primary" />, titleKey: 'contact.christmasHoursTitle', valueKey: 'contact.christmasHours' },
     { icon: <Phone className="h-6 w-6 text-primary" />, titleKey: 'contact.phoneTitle', valueKey: 'contact.phone' },
     { icon: <Mail className="h-6 w-6 text-primary" />, titleKey: 'contact.emailTitle', valueKey: 'contact.email' },
   ];
