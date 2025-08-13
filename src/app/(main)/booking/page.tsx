@@ -24,22 +24,26 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useTranslation } from "@/hooks/use-translation";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
+import { sendBookingEmail } from "@/ai/flows/send-booking-email";
+
+const formSchema = z.object({
+    name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+    email: z.string().email({ message: "Please enter a valid email." }),
+    phone: z.string().optional(),
+    lessonType: z.string({ required_error: "Please select a lesson type." }),
+    date: z.string().optional(),
+    message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+});
+
+export type BookingFormValues = z.infer<typeof formSchema>;
+
 
 export default function BookingPage() {
     const { t } = useTranslation();
     const { toast } = useToast();
 
-    const formSchema = z.object({
-        name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-        email: z.string().email({ message: "Please enter a valid email." }),
-        phone: z.string().optional(),
-        lessonType: z.string({ required_error: "Please select a lesson type." }),
-        date: z.string().optional(),
-        message: z.string().min(10, { message: "Message must be at least 10 characters." }),
-    });
-
-    const form = useForm<z.infer<typeof formSchema>>({
+    const form = useForm<BookingFormValues>({
         resolver: zodResolver(formSchema),
         defaultValues: {
             name: "",
@@ -49,15 +53,22 @@ export default function BookingPage() {
         },
     });
 
-    async function onSubmit(values: z.infer<typeof formSchema>) {
-        // Mock submission
-        console.log(values);
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        toast({
-            title: t('booking.form.success'),
-            description: t('booking.form.successText'),
-        });
-        form.reset();
+    async function onSubmit(values: BookingFormValues) {
+        try {
+            await sendBookingEmail(values);
+            toast({
+                title: t('booking.form.success'),
+                description: t('booking.form.successText'),
+            });
+            form.reset();
+        } catch (error) {
+            console.error("Failed to send booking email:", error);
+            toast({
+                variant: "destructive",
+                title: t('booking.form.error'),
+                description: t('booking.form.errorText'),
+            });
+        }
     }
 
     return (
