@@ -7,7 +7,8 @@
     "booking": "Booking",
     "media": "Media",
     "contact": "Contact",
-    "rental": "Rental"
+    "rental": "Rental",
+    "weather": "Weather"
   },
   "footer": {
     "rights": "All rights reserved."
@@ -132,9 +133,9 @@
     "addressTitle": "Our Address",
     "address": "Via Dolomiti, 3, 39034 Dobbiaco BZ, Italy",
     "hoursTitle": "Opening Hours",
-    "hours": "09:30 - 11:00 and 15:00 - 19:00",
+    "hours": "09:30 - 11:00 am and 15:00 - 19:00 pm",
     "christmasHoursTitle": "Christmas Opening Hours",
-    "christmasHours": "09:30 - 12:00 and 15:00 - 19:00",
+    "christmasHours": "09:30 - 12:00 am and 15:00 - 19:00 pm",
     "phoneTitle": "Phone",
     "phone": "+39 0474 972123",
     "emailTitle": "Email",
@@ -146,5 +147,9 @@
     "placeholder": "Ask a question...",
     "send": "Send",
     "welcome": "Hello! How can I help you with your ski school questions today?"
+  },
+  "weather": {
+    "title": "Weather Forecast",
+    "subtitle": "Check the weather in Dobbiaco to plan your perfect ski day."
   }
 }

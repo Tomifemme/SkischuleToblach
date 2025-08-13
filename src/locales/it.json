@@ -7,7 +7,8 @@
     "booking": "Prenotazione",
     "media": "Media",
     "contact": "Contatti",
-    "rental": "Noleggio"
+    "rental": "Noleggio",
+    "weather": "Meteo"
   },
   "footer": {
     "rights": "Tutti i diritti riservati."
@@ -146,5 +147,9 @@
     "placeholder": "Fai una domanda...",
     "send": "Invia",
     "welcome": "Ciao! Come posso aiutarti oggi con le tue domande sulla scuola di sci?"
+  },
+  "weather": {
+    "title": "Previsioni Meteo",
+    "subtitle": "Controlla il meteo a Dobbiaco per pianificare la tua giornata di sci perfetta."
   }
 }

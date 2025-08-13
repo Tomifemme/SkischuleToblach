@@ -7,7 +7,8 @@
     "booking": "Buchung",
     "media": "Medien",
     "contact": "Kontakt",
-    "rental": "Verleih"
+    "rental": "Verleih",
+    "weather": "Wetter"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten."
@@ -146,5 +147,9 @@
     "placeholder": "Stellen Sie eine Frage...",
     "send": "Senden",
     "welcome": "Hallo! Wie kann ich Ihnen heute bei Ihren Fragen zur Skischule helfen?"
+  },
+  "weather": {
+    "title": "Wettervorhersage",
+    "subtitle": "Überprüfen Sie das Wetter in Toblach, um Ihren perfekten Skitag zu planen."
   }
 }
