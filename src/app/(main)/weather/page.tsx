@@ -26,7 +26,7 @@ export default function WeatherPage() {
             src={weatherWidgetUrl}
             frameBorder="0"
             scrolling="no"
-            allowTransparency={true}
+            allowtransparency="true"
             sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
             style={{ width: '100%', height: '520px' }}
           ></iframe>
