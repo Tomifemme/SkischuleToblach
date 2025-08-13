@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useTranslation } from '@/hooks/use-translation';
-import { Users, Medal, Mountain } from 'lucide-react';
+import { Users, Medal, Mountain, ExternalLink } from 'lucide-react';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -95,6 +95,27 @@ export default function HomePage() {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-muted">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <Card className="max-w-2xl mx-auto shadow-lg text-center">
+                <CardHeader>
+                <CardTitle className="font-headline text-2xl">{t('prices.rental.title')}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                <p className="text-muted-foreground mb-4 max-w-xl mx-auto">
+                    {t('prices.rental.description')}
+                </p>
+                <Button asChild>
+                    <Link href="https://www.ski-rent.it/it/" target="_blank" rel="noopener noreferrer">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    {t('prices.rental.button')}
+                    </Link>
+                </Button>
+                </CardContent>
+            </Card>
         </div>
       </section>
     </div>

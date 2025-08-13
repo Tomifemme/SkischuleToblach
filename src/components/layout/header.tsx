@@ -22,6 +22,8 @@ const Header = () => {
     { href: '/contact', label: t('nav.contact') },
   ];
 
+  const rentalLink = { href: 'https://www.ski-rent.it/it/', label: t('nav.rental') };
+
   return (
     <header className="bg-card shadow-md sticky top-0 z-40">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,6 +45,14 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+             <a
+              href={rentalLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              {rentalLink.label}
+            </a>
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
@@ -74,6 +84,15 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            <a
+              href={rentalLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-3 py-2 rounded-md text-base font-medium text-foreground hover:bg-accent hover:text-accent-foreground"
+            >
+              {rentalLink.label}
+            </a>
              <div className="border-t my-2"></div>
             <div className="px-3 py-2">
                  <LanguageSwitcher />
