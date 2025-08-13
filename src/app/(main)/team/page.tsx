@@ -21,6 +21,17 @@ export default function TeamPage() {
         </p>
       </div>
 
+       <div className="mb-12 rounded-lg overflow-hidden shadow-xl">
+          <Image
+            src="/teams.jpg"
+            alt="The whole team of instructors"
+            width={1200}
+            height={400}
+            className="w-full object-cover"
+            data-ai-hint="ski team photo"
+          />
+       </div>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {instructors.map((instructor) => (
           <Card key={instructor.id} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col">
