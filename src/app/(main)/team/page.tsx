@@ -23,7 +23,7 @@ export default function TeamPage() {
 
        <div className="mb-12 rounded-lg overflow-hidden shadow-xl">
           <Image
-            src="/teams.jpg"
+            src="/team.jpg"
             alt="The whole team of instructors"
             width={1200}
             height={400}

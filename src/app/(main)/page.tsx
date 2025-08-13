@@ -58,7 +58,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-right">
               <Image
-                src="/teams.jpg"
+                src="/team.jpg"
                 alt="Ski school team"
                 width={600}
                 height={400}
