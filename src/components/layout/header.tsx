@@ -28,7 +28,7 @@ const Header = () => {
           <Link href="/" className="flex items-center gap-2 text-primary">
             <MountainSnow className="h-8 w-8" />
             <span className="font-headline text-xl font-bold tracking-tight">
-              SkiSchool360
+              Scuola Sci Dobbiaco
             </span>
           </Link>
 
