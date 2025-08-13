@@ -1,3 +1,4 @@
+
 export const instructors = [
   {
     id: 1,
@@ -45,15 +46,54 @@ export const instructors = [
   },
 ];
 
-export const priceList = {
-    private: [
-        { id: 1, courseKey: "privateHour", price: "€ 70,00", notesKey: "" },
-        { id: 2, courseKey: "privateHourExtra", price: "€ 15,00", notesKey: "" },
-    ],
-    groupKids: [
-        { id: 1, courseKey: "group5days", price: "€ 220,00", notesKey: "beginnersSpecial" },
-    ],
-    groupAdults: [
-        { id: 1, courseKey: "group5days", price: "€ 250,00", notesKey: "" },
-    ],
+export const priceList2025_2026 = {
+  groupCourses2Hours: {
+    "21.12.25-09.01.26": {
+      "1day": 62, "2days": 113, "3days": 150, "4days": 180, "5days": 185, "5daysAdventureDay": 220, "extraDay": 15
+    },
+    "29.11.25-20.12.25_10.01.26-07.02.26_09.03.26-12.04.26": {
+      "1day": 57, "2days": 102, "3days": 140, "4days": 165, "5days": 175, "5daysAdventureDay": 235, "extraDay": 15
+    },
+    "08.02.26-08.03.26": {
+      "1day": 62, "2days": 113, "3days": 150, "4days": 180, "5days": 185, "5daysAdventureDay": 220, "extraDay": 15
+    }
+  },
+  privateLessons: {
+    "21.12.25-09.01.26": { "1person": 60, "additionalPerson": 15 },
+    "29.11.25-20.12.25_10.01.26-07.02.26_09.03.26-12.04.26": { "1person": 55, "additionalPerson": 15 },
+    "08.02.26-08.03.26": { "1person": 60, "additionalPerson": 15 },
+    "10:00-13:00": { "price": 70 }
+  },
+  superCourses: {
+    "21.12.25-09.01.26_08.02.26-08.03.26": {
+      "3persons": { "5hours": 135, "10hours": 240 },
+      "4persons": { "5hours": 125, "10hours": 210 },
+      "5persons": { "5hours": 115, "10hours": 195 }
+    },
+    "29.11.25-20.12.25_10.01.26-07.02.26_09.03.26-12.04.26": {
+      "3persons": { "5hours": 125, "10hours": 220 },
+      "4persons": { "5hours": 110, "10hours": 195 },
+      "5persons": { "5hours": 105, "10hours": 180 }
+    }
+  },
+  weekendCourse: {
+    "09.01.26-12.04.26": {
+      "3days": { "price": 155, "time": { "friday": "14:00-16:00", "saturday": "10:00-12:00", "sunday": "10:00-12:00" } }
+    }
+  },
+  fullDayWithLunch: {
+    "21.12.25-09.01.26_08.02.26-08.03.26": { "5days": 445, "4days": 380, "3days": 310, "2days": 225, "1day": 125 },
+    "29.11.25-20.12.25_10.01.26-07.02.26_09.03.26-12.04.26": { "5days": 420, "4days": 365, "3days": 299, "2days": 220, "1day": 115 }
+  },
+  freeride: {
+    "21.12.25-09.01.26_08.02.26-08.03.26": {
+      "2persons": { "1day": 170, "2days": 320 }, "3persons": { "1day": 130, "2days": 245 }, "4persons": { "1day": 115, "2days": 210 }
+    },
+    "29.11.25-20.12.25_10.01.26-07.02.26_09.03.26-12.04.26": {
+      "2persons": { "1day": 160, "2days": 295 }, "3persons": { "1day": 125, "2days": 220 }, "4persons": { "1day": 105, "2days": 195 }
+    }
+  },
+  juniorClubHalfDayWithLunch: {
+    anyPeriod: { "price": 55, "time": "12:00-15:00" }
+  }
 };
