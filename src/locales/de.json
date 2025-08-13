@@ -1,0 +1,103 @@
+
+{
+  "nav": {
+    "home": "Startseite",
+    "team": "Unser Team",
+    "prices": "Preise",
+    "booking": "Buchung",
+    "media": "Medien",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "home": {
+    "heroTitle": "Erleben Sie das ultimative Skiabenteuer in Toblach",
+    "heroSubtitle": "Unterricht für alle Alters- und Könnensstufen mit zertifizierten Skilehrern. Buchen Sie noch heute Ihren Wintertraum!",
+    "bookNow": "Jetzt buchen",
+    "overviewTitle": "Unsere Philosophie",
+    "overviewText": "Bei der Skischule Toblach glauben wir, dass Skifahren mehr als nur ein Sport ist - es ist eine Leidenschaft, die Menschen mit der majestätischen Natur der Dolomiten verbindet. Unsere Mission ist es, eine sichere, unterhaltsame und unterstützende Umgebung zu schaffen, in der jeder seine Fähigkeiten erlernen und verbessern kann, um unvergessliche Erinnerungen im Schnee zu schaffen.",
+    "features": [
+      {
+        "title": "Alle Könnensstufen",
+        "description": "Vom absoluten Anfänger bis zum Experten-Carver haben wir den perfekten Kurs für Sie."
+      },
+      {
+        "title": "Zertifizierte Lehrer",
+        "description": "Unser Team besteht aus hochqualifizierten und erfahrenen Fachleuten."
+      },
+      {
+        "title": "Atemberaubende Landschaft",
+        "description": "Lernen Sie Skifahren umgeben von der atemberaubenden Schönheit der Dolomiten."
+      }
+    ]
+  },
+  "team": {
+    "title": "Lernen Sie unsere Skilehrer kennen",
+    "subtitle": "Das Herz unserer Schule - leidenschaftlich, professionell und immer mit einem Lächeln."
+  },
+  "prices": {
+    "title": "Unsere Preisliste",
+    "subtitle": "Finden Sie das perfekte Paket für Ihr Skiabenteuer.",
+    "privateLessons": "Privatunterricht",
+    "groupLessonsKids": "Gruppenunterricht - Kinder",
+    "groupLessonsAdults": "Gruppenunterricht - Erwachsene",
+    "course": "Kurs",
+    "price": "Preis",
+    "notes": "Anmerkungen",
+    "privateHour": "1 Stunde Privatunterricht (1 Person)",
+    "privateHourExtra": "Jede weitere Person",
+    "group5days": "5-Tage-Kurs",
+    "beginnersSpecial": "Für absolute Anfänger"
+  },
+  "booking": {
+    "title": "Buchen Sie Ihren Unterricht",
+    "subtitle": "Wir freuen uns, Sie auf den Pisten begrüßen zu dürfen! Füllen Sie das folgende Formular aus, um Ihre Buchung anzufordern.",
+    "form": {
+      "name": "Vollständiger Name",
+      "namePlaceholder": "Max Mustermann",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "max.mustermann@example.com",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+49 123 456 7890",
+      "lessonType": "Unterrichtsart",
+      "selectLesson": "Wählen Sie einen Kurs",
+      "private": "Privatunterricht",
+      "groupKids": "Gruppenunterricht (Kinder)",
+      "groupAdults": "Gruppenunterricht (Erwachsene)",
+      "date": "Bevorzugtes Datum",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrer Skierfahrung und besonderen Wünschen.",
+      "submit": "Buchungsanfrage senden",
+      "success": "Buchungsanfrage gesendet!",
+      "successText": "Vielen Dank für Ihre Anfrage. Wir werden uns in Kürze mit Ihnen in Verbindung setzen, um Ihre Buchung zu bestätigen.",
+      "error": "Etwas ist schief gelaufen.",
+      "errorText": "Buchungsanfrage konnte nicht gesendet werden. Bitte versuchen Sie es erneut."
+    }
+  },
+  "media": {
+    "title": "Mediengalerie",
+    "subtitle": "Ein Einblick in die Action und den Spaß in der Skischule Toblach.",
+    "videosTitle": "Unsere Videos",
+    "photosTitle": "Fotomomente"
+  },
+  "contact": {
+    "title": "Wo Sie uns finden",
+    "subtitle": "Wir befinden uns im Herzen der Dolomiten, bereit für Ihr Winterabenteuer.",
+    "addressTitle": "Unsere Adresse",
+    "address": "Dolomitenstraße 3, 39034 Toblach BZ, Italien",
+    "hoursTitle": "Öffnungszeiten",
+    "hours": "Täglich: 9:00 - 17:00 Uhr",
+    "phoneTitle": "Telefon",
+    "phone": "+39 0474 972123",
+    "emailTitle": "E-Mail",
+    "email": "info@scuolascidobbiaco.com",
+    "mapTitle": "Unser Standort"
+  },
+  "chatbot": {
+    "title": "Skischul-Assistent",
+    "placeholder": "Stellen Sie eine Frage...",
+    "send": "Senden",
+    "welcome": "Hallo! Wie kann ich Ihnen heute bei Ihren Fragen zur Skischule helfen?"
+  }
+}

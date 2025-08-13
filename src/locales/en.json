@@ -1,0 +1,103 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "team": "Our Team",
+    "prices": "Prices",
+    "booking": "Booking",
+    "media": "Media",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "home": {
+    "heroTitle": "Experience the Ultimate Ski Adventure in Dobbiaco",
+    "heroSubtitle": "Lessons for all ages and skill levels with certified instructors. Book your winter dream today!",
+    "bookNow": "Book Now",
+    "overviewTitle": "Our Philosophy",
+    "overviewText": "At Scuola Sci Dobbiaco, we believe that skiing is more than just a sport - it's a passion that connects people with the majestic nature of the Dolomites. Our mission is to provide a safe, fun, and supportive environment for everyone to learn and improve their skills, creating unforgettable memories on the snow.",
+    "features": [
+      {
+        "title": "All Skill Levels",
+        "description": "From absolute beginners to expert carvers, we have the perfect course for you."
+      },
+      {
+        "title": "Certified Instructors",
+        "description": "Our team consists of highly qualified and experienced professionals."
+      },
+      {
+        "title": "Stunning Scenery",
+        "description": "Learn to ski surrounded by the breathtaking beauty of the Dolomites."
+      }
+    ]
+  },
+  "team": {
+    "title": "Meet Our Instructors",
+    "subtitle": "The heart of our school - passionate, professional, and always with a smile."
+  },
+  "prices": {
+    "title": "Our Price List",
+    "subtitle": "Find the perfect package for your ski adventure.",
+    "privateLessons": "Private Lessons",
+    "groupLessonsKids": "Group Lessons - Kids",
+    "groupLessonsAdults": "Group Lessons - Adults",
+    "course": "Course",
+    "price": "Price",
+    "notes": "Notes",
+    "privateHour": "1 Hour Private Lesson (1 person)",
+    "privateHourExtra": "Each additional person",
+    "group5days": "5-Day Course",
+    "beginnersSpecial": "For absolute beginners"
+  },
+  "booking": {
+    "title": "Book Your Lesson",
+    "subtitle": "We're excited to welcome you on the slopes! Fill out the form below to request your booking.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john.doe@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+1 234 567 890",
+      "lessonType": "Lesson Type",
+      "selectLesson": "Select a lesson",
+      "private": "Private Lesson",
+      "groupKids": "Group Lesson (Kids)",
+      "groupAdults": "Group Lesson (Adults)",
+      "date": "Preferred Date",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your ski experience and any special requests.",
+      "submit": "Send Booking Request",
+      "success": "Booking request sent!",
+      "successText": "Thank you for your request. We will contact you shortly to confirm your booking.",
+      "error": "Something went wrong.",
+      "errorText": "Could not send booking request. Please try again."
+    }
+  },
+  "media": {
+    "title": "Media Gallery",
+    "subtitle": "A glimpse into the action and fun at Scuola Sci Dobbiaco.",
+    "videosTitle": "Our Videos",
+    "photosTitle": "Photo Moments"
+  },
+  "contact": {
+    "title": "Where to Find Us",
+    "subtitle": "We are located in the heart of the Dolomites, ready for your winter adventure.",
+    "addressTitle": "Our Address",
+    "address": "Via Dolomiti, 3, 39034 Dobbiaco BZ, Italy",
+    "hoursTitle": "Opening Hours",
+    "hours": "Daily: 9:00 AM - 5:00 PM",
+    "phoneTitle": "Phone",
+    "phone": "+39 0474 972123",
+    "emailTitle": "Email",
+    "email": "info@scuolascidobbiaco.com",
+    "mapTitle": "Our Location"
+  },
+  "chatbot": {
+    "title": "Ski School Assistant",
+    "placeholder": "Ask a question...",
+    "send": "Send",
+    "welcome": "Hello! How can I help you with your ski school questions today?"
+  }
+}

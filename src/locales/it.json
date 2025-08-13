@@ -1,0 +1,103 @@
+
+{
+  "nav": {
+    "home": "Home",
+    "team": "Il Nostro Team",
+    "prices": "Prezzi",
+    "booking": "Prenotazione",
+    "media": "Media",
+    "contact": "Contatti"
+  },
+  "footer": {
+    "rights": "Tutti i diritti riservati."
+  },
+  "home": {
+    "heroTitle": "Vivi l'avventura sciistica definitiva a Dobbiaco",
+    "heroSubtitle": "Lezioni per tutte le età e livelli con maestri certificati. Prenota oggi il tuo sogno invernale!",
+    "bookNow": "Prenota Ora",
+    "overviewTitle": "La Nostra Filosofia",
+    "overviewText": "Alla Scuola Sci Dobbiaco, crediamo che lo sci sia più di un semplice sport: è una passione che connette le persone con la natura maestosa delle Dolomiti. La nostra missione è fornire un ambiente sicuro, divertente e di supporto per tutti, per imparare e migliorare le proprie abilità, creando ricordi indimenticabili sulla neve.",
+    "features": [
+      {
+        "title": "Tutti i Livelli",
+        "description": "Dai principianti assoluti agli sciatori esperti, abbiamo il corso perfetto per te."
+      },
+      {
+        "title": "Maestri Certificati",
+        "description": "Il nostro team è composto da professionisti altamente qualificati ed esperti."
+      },
+      {
+        "title": "Paesaggi Mozzafiato",
+        "description": "Impara a sciare circondato dalla bellezza mozzafiato delle Dolomiti."
+      }
+    ]
+  },
+  "team": {
+    "title": "Incontra i Nostri Maestri",
+    "subtitle": "Il cuore della nostra scuola: appassionati, professionali e sempre con un sorriso."
+  },
+  "prices": {
+    "title": "Il Nostro Listino Prezzi",
+    "subtitle": "Trova il pacchetto perfetto per la tua avventura sulla neve.",
+    "privateLessons": "Lezioni Private",
+    "groupLessonsKids": "Corsi Collettivi - Bambini",
+    "groupLessonsAdults": "Corsi Collettivi - Adulti",
+    "course": "Corso",
+    "price": "Prezzo",
+    "notes": "Note",
+    "privateHour": "1 Ora Lezione Privata (1 persona)",
+    "privateHourExtra": "Ogni persona aggiuntiva",
+    "group5days": "Corso di 5 giorni",
+    "beginnersSpecial": "Per principianti assoluti"
+  },
+  "booking": {
+    "title": "Prenota la Tua Lezione",
+    "subtitle": "Siamo entusiasti di darti il benvenuto sulle piste! Compila il modulo sottostante per richiedere la tua prenotazione.",
+    "form": {
+      "name": "Nome Completo",
+      "namePlaceholder": "Mario Rossi",
+      "email": "Indirizzo Email",
+      "emailPlaceholder": "mario.rossi@example.com",
+      "phone": "Numero di Telefono",
+      "phonePlaceholder": "+39 123 456 7890",
+      "lessonType": "Tipo di Lezione",
+      "selectLesson": "Seleziona una lezione",
+      "private": "Lezione Privata",
+      "groupKids": "Corso Collettivo (Bambini)",
+      "groupAdults": "Corso Collettivo (Adulti)",
+      "date": "Data Preferita",
+      "message": "Messaggio",
+      "messagePlaceholder": "Parlaci della tua esperienza sciistica e di eventuali richieste speciali.",
+      "submit": "Invia Richiesta di Prenotazione",
+      "success": "Richiesta di prenotazione inviata!",
+      "successText": "Grazie per la tua richiesta. Ti contatteremo a breve per confermare la tua prenotazione.",
+      "error": "Qualcosa è andato storto.",
+      "errorText": "Impossibile inviare la richiesta di prenotazione. Si prega di riprovare."
+    }
+  },
+  "media": {
+    "title": "Galleria Multimediale",
+    "subtitle": "Uno sguardo all'azione e al divertimento alla Scuola Sci Dobbiaco.",
+    "videosTitle": "I Nostri Video",
+    "photosTitle": "Momenti Fotografici"
+  },
+  "contact": {
+    "title": "Dove Trovarci",
+    "subtitle": "Ci troviamo nel cuore delle Dolomiti, pronti per la tua avventura invernale.",
+    "addressTitle": "Il Nostro Indirizzo",
+    "address": "Via Dolomiti, 3, 39034 Dobbiaco BZ, Italia",
+    "hoursTitle": "Orari di Apertura",
+    "hours": "Tutti i giorni: 9:00 - 17:00",
+    "phoneTitle": "Telefono",
+    "phone": "+39 0474 972123",
+    "emailTitle": "Email",
+    "email": "info@scuolascidobbiaco.com",
+    "mapTitle": "La Nostra Posizione"
+  },
+  "chatbot": {
+    "title": "Assistente Scuola Sci",
+    "placeholder": "Fai una domanda...",
+    "send": "Invia",
+    "welcome": "Ciao! Come posso aiutarti oggi con le tue domande sulla scuola di sci?"
+  }
+}
