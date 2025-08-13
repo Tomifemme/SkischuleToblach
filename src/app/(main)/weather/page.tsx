@@ -3,11 +3,10 @@
 
 import { useTranslation } from '@/hooks/use-translation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
 
 export default function WeatherPage() {
   const { t } = useTranslation();
-
-  const weatherWidgetUrl = "https://www.meteoblue.com/en/weather/widget/daily/dobbiaco_italy_3178003?geoloc=fixed&days=5&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&precipunit=MILLIMETER&coloured=coloured&pictoicon=1&maxtemperature=1&mintemperature=1&windspeed=1&windgust=0&winddirection=1&uvindex=1&humidity=1&precipitation=1&precipitationprobability=1&spot=1&pressure=1&sunshine=1";
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -21,17 +20,25 @@ export default function WeatherPage() {
       </div>
 
       <Card className="max-w-4xl mx-auto shadow-xl overflow-hidden">
-        <CardContent className="p-0">
-          <iframe
-            src={weatherWidgetUrl}
-            frameBorder="0"
-            scrolling="no"
-            allowtransparency="true"
-            sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox"
-            style={{ width: '100%', height: '520px' }}
-          ></iframe>
+        <CardContent className="p-0 relative h-[380px]">
+            <a 
+                className="weatherwidget-io" 
+                href="https://forecast7.com/en/46d7312d24/dobbiaco/" 
+                data-label_1="DOBBIACO" 
+                data-label_2="WEATHER" 
+                data-theme="original"
+                style={{ display: 'block', position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            >
+                Dobbiaco Weather
+            </a>
+            <script
+                id='weatherwidget-io-js'
+                src='https://weatherwidget.io/js/widget.min.js'
+                async
+            ></script>
         </CardContent>
       </Card>
     </div>
   );
 }
+
