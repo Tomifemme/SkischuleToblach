@@ -3,7 +3,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useTranslation } from '@/hooks/use-translation';
 import { MapPin, Clock, Phone, Mail } from 'lucide-react';
-import Map from '@/components/map';
 
 export default function ContactPage() {
   const { t } = useTranslation();
@@ -14,6 +13,8 @@ export default function ContactPage() {
     { icon: <Phone className="h-6 w-6 text-primary" />, titleKey: 'contact.phoneTitle', valueKey: 'contact.phone' },
     { icon: <Mail className="h-6 w-6 text-primary" />, titleKey: 'contact.emailTitle', valueKey: 'contact.email' },
   ];
+
+  const mapEmbedUrl = "https://maps.google.com/maps?q=Via%20Dolomiti%2C%203%2C%2039034%20Dobbiaco%20BZ%2C%20Italy&t=&z=15&ie=UTF8&iwloc=&output=embed";
 
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -54,7 +55,15 @@ export default function ContactPage() {
             </CardHeader>
             <CardContent>
               <div className="h-96 w-full rounded-md overflow-hidden">
-                <Map />
+                <iframe
+                  src={mapEmbedUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </CardContent>
           </Card>
